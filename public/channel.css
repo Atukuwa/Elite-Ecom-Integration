@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+   
+    grid-template-columns: 1fr 3fr;
+}
+/*nav styles*/
+nav{
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 3fr 1fr;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   width: 20%;
+   overflow: hidden;
+}
+nav div.nav_links a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: black;
+    margin: 0% 8% 5% 0%;
+    padding: 5% 8%;
+}
+nav div.nav_links a:hover{
+    background-color: #fff;
+    color: black;
+}
+nav h1{
+    color: #fff;
+    margin: 15% 10%;
+}
+nav div.logout{
+    align-self: end;
+    margin: 10%;
+}
+nav div.logout a{
+    color: #fff;
+    text-decoration: none;
+    align-self: end;
+}
+/*header styles*/
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    max-width: 1020px;
+    margin-left: 21%;
+    margin-top: 2.5%;
+}
+header h2{
+    align-self: center;
+    margin-left: 5%;
+}
+header div.user img{
+    width: 15%;
+    justify-self: end;
+    align-self: center;
+}
+header div.user p{
+    align-self: center;
+    font-size: 0.9em;
+}
+header div.user{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+/*main body styles*/
+section.tok{
+    margin-left: 23%; 
+    border: 1px solid black;
+    max-width: 66%;
+    border-radius: 6px;
+    margin-top: 3%;
+    padding: 2%;
+}
+section.token-address{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section.tok > section > div:nth-child(2) > a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0085ff;
+    padding: 6% 10%;
+    font-size: 0.8em;
+    border-radius: 4px;
+}
+section.tok > section > div:nth-child(2){
+    align-self: top;
+    margin-left: 70%;
+    margin-top: 2.5%;
+}
+body > main > section.tok > section > div:nth-child(1) > h2{
+    margin-top: 0;
+}
+section.tok > section > div:nth-child(1){
+    align-self: top;
+}
+section.tok input{
+    width: 93%;
+    height: 5.5%;
+    border-radius: 6px;
+    background-color: rgba(128, 128, 128, 0.399);
+    border: none;
+}
+section.tok a img{
+    width: 2.5%;
+    margin-bottom: -0.5%;
+}
+body > main > section.tok > a{
+    padding: 1.1%;
+    background-color: rgb(185, 182, 182);
+    border-radius: 5px;
+    position: relative;
+    left: -1.5%;
+}
+/*channel info styles*/
+section.channel-info{
+    max-width: 990px;
+    margin-left: 23%;
+    border: 1px solid black;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    max-width: 70%;
+    border-radius: 6px;
+    padding: 2%;
+    box-sizing: border-box;
+}
+section.channel-info div.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section.channel-info > div.info > h2{
+    margin-top: 0;
+}
+section.channel-info > div.info > div > a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0085ff;
+    padding: 6% 25%;
+    font-size: 0.8em;
+    border-radius: 4px;
+}
+body > main > section.channel-info > div.info > div{
+    margin-top: 2%;
+    margin-left: 68%;
+}
+div#shopify-woo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    margin-top: 2%;
+}
+div#shopify-woo div.shopify{
+    border: 1px solid black;
+    margin-right: 5%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+div#shopify-woo div.shopify h2{
+    border-bottom: 1px solid black;
+    padding: 7%;
+    margin: 0;
+}
+div#shopify-woo div.shopify div.store-name{
+    margin: 0;
+}
+div#shopify-woo div.shopify div.store-name p{
+    margin: 0;
+    margin-bottom: 20%;
+    padding: 7%;
+    box-sizing: border-box;
+    line-height: 250%;
+}

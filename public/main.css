@@ -1,0 +1,135 @@
+@font-face{
+    src: url(/public/images/Inter-Regular.ttf);
+    font-family: interfont;
+}
+body{
+    margin: 0;
+    font-family: interfont;
+}
+/*nav styles*/
+nav{
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 3fr 1fr;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   width: 20%;
+   overflow: hidden;
+}
+nav div.nav_links a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: black;
+    margin: 0% 8% 5% 0%;
+    padding: 5% 8%;
+}
+nav div.nav_links a:hover{
+    background-color: #fff;
+    color: black;
+}
+nav h1{
+    color: #fff;
+    margin: 15% 10%;
+}
+nav div.logout{
+    align-self: end;
+    margin: 10%;
+}
+nav div.logout a{
+    color: #fff;
+    text-decoration: none;
+    align-self: end;
+}
+/*header styles*/
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    max-width: 1020px;
+    margin-left: 21%;
+    margin-top: 2.5%;
+}
+header h2{
+    align-self: center;
+    margin-left: 5%;
+}
+header div.user img{
+    width: 15%;
+    justify-self: end;
+    align-self: center;
+}
+header div.user p{
+    align-self: center;
+    font-size: 0.9em;
+}
+header div.user{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+/*main body styles*/
+section#channels{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 30px;
+    margin: 3%;
+    max-width: 1020px;
+    margin-left: 23%;
+}
+div.channel{
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 2% 5%;
+}
+div.channel div.active_view{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.channel div.active_view div.active a{
+    text-decoration: none;
+    color: #059f0b;
+}
+div.channel div.active_view div.view{
+    justify-self: center;
+}
+div.channel div.active_view div.view a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0085ff;
+    padding: 10% 60%;
+    font-size: 0.8em;
+    border-radius: 8%;
+}
+/*bottom navigation styles*/
+div.navigation{
+    float: right;
+    margin-right: 6%;
+    margin-bottom: 3%;
+    
+}
+main > div > a:nth-child(1){
+    text-decoration: none;
+    color:black;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0s;
+}
+main > div > span{
+   padding: 8px;
+   margin: 0;
+  
+}
+main > div > a:nth-child(3){
+    text-decoration: none;
+    color:black;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0s;
+}
