@@ -133,3 +133,114 @@ main > div > a:nth-child(3){
     border-radius: 5px;
     margin: 0s;
 }
+/*responsive styles*/
+@media screen and (max-width:960px) {
+    section#channels{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        margin-top: 6%;      
+    }
+    header{
+        max-width: 70%;
+    }
+    nav h1{
+        font-size: 1.5em;
+        margin-top: 25%;
+    }
+}
+@media screen and (max-width:785px){
+    nav{
+        width: 22%;
+    }
+    section#channels{
+        margin-left: 28%;
+    }
+    header{
+       margin-left: 25%;
+    }
+}
+@media screen and (max-width:695px){
+    section#channels{
+        display: block; 
+        margin-left: 40%;
+    }
+    div.channel{
+        margin-bottom: 10%;
+        max-width: 70%;
+    }
+    header{
+        max-width: 58%;
+        margin-left: 35%;
+    }
+    header div.user img{
+        width: 30%;
+    }
+    div.navigation{
+        float: right;
+        margin-right: 22%;
+        margin-bottom: 3%;
+        
+    }
+    nav{
+        width: 30%;
+    }
+}
+@media screen and (max-width:546px){
+    nav h1{
+        font-size: 1em;
+    }
+    nav div.nav_links a{
+        font-size: 0.8em;
+    }
+    header h2{
+        font-size: 1.1em;
+    }
+    header div.user p{
+        font-size: 0.8em;
+    }
+    section#channels div.channel h3,p{
+        font-size: 0.9em;
+    }
+    div.active_view div.active a{
+        font-size: 0.8em;
+    }
+    div.channel div.active_view div.view a{
+        font-size: 0.7em;
+    }
+    body > main > div > a:nth-child(1){
+        font-size: 0.8em;
+    }
+    body > main > div > a:nth-child(3){
+        font-size: 0.8em;
+    }
+    div.channel div.active_view div.view{
+        margin-bottom: 5%;
+    }
+    header div.user img{
+        width: 50%;
+    }
+}
+@media screen and (max-width:400px){
+    section#channels div.channel h3,p{
+        font-size: 0.7em;
+    }
+    div.channel div.active_view div.view a{
+        font-size: 0.5em;
+    }
+    div.channel div.active_view div.active a{
+        font-size: 0.6em;
+    }
+    body > main > div > a:nth-child(1){
+        font-size: 0.5em;
+    }
+    body > main > div > a:nth-child(3){
+        font-size: 0.5em;
+    }
+    body > main > div > span{
+        font-size: 00.8em
+    }
+    header div.user img{
+        width: 75%;
+    }
+   
+}
